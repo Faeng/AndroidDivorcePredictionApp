@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PredictionPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_margin="30dp"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question"
+            android:text="Question xx"
+            android:textColor="#000"
+            android:fontFamily="@font/mitr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="question?"
+            android:id="@+id/questionBox"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/mitr"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/choice">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="NEXT"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"
+            android:fontFamily="@font/mitr"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>
