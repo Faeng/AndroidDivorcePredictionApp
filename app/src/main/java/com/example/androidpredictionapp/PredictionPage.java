@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class PredictionPage extends AppCompatActivity {
 
-    private TextView question,questionBox,nextText;
+    private TextView question,questionBox;
 
     //use this for checking count of picking choices in items.
     private ArrayList<Integer> answer = new ArrayList<>();
@@ -103,7 +103,7 @@ public class PredictionPage extends AppCompatActivity {
                         Toast.makeText(PredictionPage.this, "Please Select Answer", Toast.LENGTH_LONG).show();
                     }
                 }
-            }
+        }
         });
     }
 
