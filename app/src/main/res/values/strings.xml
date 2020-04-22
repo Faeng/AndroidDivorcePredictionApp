@@ -51,4 +51,9 @@
     <string name="item_44">\u0020\u0020\u0020\u0020I\'m not actually the one who\'s guilty about what I\'m accused of.</string>
     <string name="item_45">\u0020\u0020\u0020\u0020I\'m not the one who\'s wrong about problems at home.</string>
     <string name="item_46">\u0020\u0020\u0020\u0020I\'m not afraid to tell my spouse about her/his incompetence.</string>
+    <string name="title_result">Your Result is...</string>
+    <string name="predict_yes_result">You will be divorce.</string>
+    <string name="predict_no_result">You will not be divorce.</string>
+    <string name="home_button">Back to HOME MENU</string>
+
 </resources>

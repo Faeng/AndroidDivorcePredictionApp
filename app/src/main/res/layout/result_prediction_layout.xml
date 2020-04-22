@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_prediction_background">
+
+
+    <TextView
+        android:id="@+id/ResultTitleTextView"
+        android:layout_width="288dp"
+        android:layout_height="124dp"
+        android:fontFamily="@font/itim"
+        android:text="@string/title_result"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHighlight="#040304"
+        android:textFontWeight="10"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="283dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/itim"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultTitleTextView" />
+
+    <TextView
+        android:id="@+id/percentValueTextview"
+        android:layout_width="132dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/abril_fatface"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultTitleTextView" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="132dp"
+        android:text="%"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toEndOf="@+id/percentValueTextview"
+        app:layout_constraintTop_toBottomOf="@+id/ResultTitleTextView" />
+
+    <Button
+        android:id="@+id/home_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_purple"
+        android:backgroundTint="#572BA5"
+        android:onClick="homeclk"
+        android:text="@string/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentValueTextview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

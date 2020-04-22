@@ -1,13 +1,18 @@
 package com.example.androidpredictionapp;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import org.tensorflow.lite.Interpreter;
+
+import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -96,9 +101,13 @@ public class PredictionPage extends AppCompatActivity {
                         tflite.run(input,out);
                         System.out.println("The prob that you will not divorce is: " + df2.format(out[0][0]*100)+"%");
                         System.out.println("The prob that you will divorce is: "+df2.format(out[0][1]*100)+"%");
-                        Toast.makeText(PredictionPage.this, "The prob that you will not divorce is: " +
-                                df2.format(out[0][0]*100)+"%"+"\n"+
-                                "The prob that you will divorce is: "+df2.format(out[0][1]*100)+"%", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(PredictionPage.this, "The prob that you will not divorce is: " +
+//                                df2.format(out[0][0]*100)+"%"+"\n"+
+//                                "The prob that you will divorce is: "+df2.format(out[0][1]*100)+"%", Toast.LENGTH_LONG).show();
+                        //showPredictResultPage(out[0][0],out[0][1]);
+                        Intent i = new Intent(PredictionPage.this, ResultPredictionPage.class);
+                        i.putExtra("predictResult",new float[]{out[0][0],out[0][1]});
+                        startActivity(i);
                     } else {
                         Toast.makeText(PredictionPage.this, "Please Select Answer", Toast.LENGTH_LONG).show();
                     }
@@ -139,4 +148,28 @@ public class PredictionPage extends AppCompatActivity {
     public void addChoiceInArray(int number,int choice){
         input[0][number] = choice;
     }
+
+//    public void showPredictResultPage(float class_a, float class_b){
+//        if(class_a > class_b){
+//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//
+//            View result_layout = LayoutInflater.from(this).inflate(R.layout.result_prediction_layout,null);
+//            final TextView result_text = result_layout.findViewById(R.id.resultTextView);
+//            final TextView percent_value = result_layout.findViewById(R.id.percentValueTextview);
+//            result_text.setText(R.string.predict_no_result);
+//            percent_value.setText(String.valueOf(df2.format(class_a*100)));
+//            builder.setView(result_layout);
+//            builder.show();
+//        }
+//        else{
+//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//            View result_layout = LayoutInflater.from(this).inflate(R.layout.result_prediction_layout,null);
+//            final TextView result_text = result_layout.findViewById(R.id.resultTextView);
+//            final TextView percent_value = result_layout.findViewById(R.id.percentValueTextview);
+//            result_text.setText(R.string.predict_yes_result);
+//            percent_value.setText(String.valueOf(df2.format(class_b*100)));
+//            builder.setView(result_layout);
+//            builder.show();
+//        }
+//    }
 }
