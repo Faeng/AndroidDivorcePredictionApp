@@ -55,5 +55,45 @@
     <string name="predict_yes_result">You will be divorce.</string>
     <string name="predict_no_result">You will not be divorce.</string>
     <string name="home_button">Back to HOME MENU</string>
+    <string name="song_paragraph">\u0020\u0020\u0020\u0020Looking for that perfect song to play for your next romantic evening? Maybe you have a special date coming up, or an anniversary, or want to choose just the right music for Valentine\'s Day? Here is a list of some of the best love songs to help you create a great playlist for your special date.</string>
+    <string name="song_1" translatable="false">"Yellow" - Coldplay</string>
+    <string name="song_2" translatable="false">"Lover" - Taylor Swift</string>
+    <string name="song_3" translatable="false">"No One" - Alicia Keys</string>
+    <string name="song_4" translatable="false">"Ocean" - Lady Antebellum</string>
+    <string name="song_5" translatable="false">"Wife You Up" - Russ</string>
+    <string name="song_6" translatable="false">"The Bones" - Maren Morris</string>
+    <string name="song_7" translatable="false">"Love Song" - Lana Del Rey</string>
+    <string name="song_8" translatable="false">"You and I Both" - Jason Mraz</string>
+    <string name="song_9" translatable="false">"When I Look At You" - Miley Cyrus</string>
+    <string name="song_10" translatable="false">"She Will Be Loved" - Maroon 5</string>
+    <string name="song_11" translatable="false">"Kiss Me" - Ed Sheeran</string>
+    <string name="song_12" translatable="false">"All of Me" - John Legend</string>
+    <string name="song_13" translatable="false">"At Last" - Etta James</string>
+    <string name="song_14" translatable="false">"Just the Way You Are" - Bruno Mars</string>
+    <string name="song_15" translatable="false">"Perfect" - Ed Sheeran ft. Beyoncé</string>
+    <string name="song_16" translatable="false">"Halo" - Beyoncé</string>
+    <string name="song_17" translatable="false">"Thinking Out Loud" - Ed Sheeran</string>
+    <string name="song_18" translatable="false">"Love on the Brain" - Rihanna</string>
+    <string name="des_song_1" translatable="false">Look at the stars\nLook how they shine for you\nAnd everything you do\nYeah they were all yellow..."</string>
+    <string name="des_song_2" translatable="false">My heart\'s been borrowed and yours has been blue\nAll\'s well that ends well to end up with you...</string>
+    <string name="des_song_3" translatable="false">You and me together\nThrough the days and nights\nI don\'t worry \'cause\nEverything\'s gonna be alright...</string>
+    <string name="des_song_4" translatable="false">Here you are, next to me\nSo much beauty at my feet\nAll I wanna do is swim\nBut the waves keep crashin\' in...</string>
+    <string name="des_song_5" translatable="false">I\'m turning down the rest for you\nIf they call us foul I\'m fighting all the refs for you\nYou make me a better me\nI make you a better you....</string>
+    <string name="des_song_6" translatable="false">Call it dumb luck, but baby, you and I\nCan\'t even mess it up, although we both try\nNo, it don\'t always go the way we planned it\nBut the wolves came and went and we\'re still standing...</string>
+    <string name="des_song_7" translatable="false">Oh, be my once in a lifetime\nLyin\' on your chest in my party dress\nI\'m a fuckin\' mess, but I\nOh, thanks for the high life...</string>
+    <string name="des_song_8" translatable="false">And it\'s okay if you have to go away\nOh just remember the telephones, well they work in both ways\nBut if I never ever hear them ring\nIf nothing else I\'ll think the bells inside\nHave finally found you someone else and that\'s okay\n\'Cause I\'ll remember everything you sang...</string>
+    <string name="des_song_9" translatable="false">When I look at you, I see forgiveness\nI see the truth\nYou love me for who I am\nLike the stars hold the moon\nRight there where they belong\nAnd I know I\'m not alone...</string>
+    <string name="des_song_10" translatable="false">I don\'t mind spendin\' everyday\nOut on your corner in the pourin\' rain\nLook for the girl with the broken smile\nAsk her if she wants to stay awhile\nAnd she will be loved, and she will be loved...</string>
+    <string name="des_song_11" translatable="false">And your heart\'s against my chest\nYour lips pressed in my neck\nI\'m falling for your eyes, but they don\'t know me yet\nAnd with a feeling I\'ll forget, I\'m in love now...</string>
+    <string name="des_song_12" translatable="false">Cause all of me\nLoves all of you\nLove your curves and all your edges\nAll your perfect imperfections...</string>
+    <string name="des_song_13" translatable="false">At last my love has come along\nMy lonely days are over\nAnd life is like a song...</string>
+    <string name="des_song_14" translatable="false">Oh, you know, you know, you know I\'d never ask you to change\nIf perfect\'s what you\'re searching for, then just stay the same...</string>
+    <string name="des_song_15" translatable="false">I\'m dancing in the dark\nWith you between my arms\nBarefoot on the grass\nWhile listening to our favorite song...</string>
+    <string name="des_song_16" translatable="false">Hit me like a ray of sun\nBurning through my darkest night\nYou\'re the only one that I want\nThink I\'m addicted to your light...</string>
+    <string name="des_song_17" translatable="false">But baby now\nTake me into your loving arms\nKiss me under the light of a thousand stars.</string>
+    <string name="des_song_18" translatable="false">Must be love on the brain\nThat\'s got me feeling this way\nIt beats me black and blue but it fucks me so good\nAnd I can\'t get enough...</string>
+
+
+
 
 </resources>
