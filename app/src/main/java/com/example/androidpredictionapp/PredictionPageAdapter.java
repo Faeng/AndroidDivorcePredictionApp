@@ -25,7 +25,7 @@ public class PredictionPageAdapter extends RecyclerView.Adapter<PredictionPageAd
         for (int i = 0; i < choices.length; i++) {
             if(i == position){
 
-                itemViewList.get(i).setBackgroundColor(Color.parseColor("#567845"));
+                itemViewList.get(i).setBackgroundColor(Color.parseColor("#C68ECF"));
             }else{
                 itemViewList.get(i).setBackgroundColor(Color.TRANSPARENT);
             }
