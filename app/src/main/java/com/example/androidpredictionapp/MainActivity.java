@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
                    //Love Song Page
                     startActivity(new Intent(MainActivity.this, MoviePage.class));
                 }
+
+                if (position == 5){
+                    startActivity(new Intent(MainActivity.this, FlowersPage.class));
+                }
                 if(position == 3){
                     startActivity(new Intent(MainActivity.this,TenThingPageActivity.class));
                 }

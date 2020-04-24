@@ -92,14 +92,14 @@
     <string name="des_song_16" translatable="false">Hit me like a ray of sun\nBurning through my darkest night\nYou\'re the only one that I want\nThink I\'m addicted to your light...</string>
     <string name="des_song_17" translatable="false">But baby now\nTake me into your loving arms\nKiss me under the light of a thousand stars.</string>
     <string name="des_song_18" translatable="false">Must be love on the brain\nThat\'s got me feeling this way\nIt beats me black and blue but it fucks me so good\nAnd I can\'t get enough...</string>
-    <string name="home_predict">Predict Divorce</string>
-    <string name="home_sub_predict">Let\'s Predict</string>
-    <string name="home_lovesong">Love Song</string>
-    <string name="home_sub_lovesong">Great Love Songs for Your Romantic Playlist</string>
-    <string name="home_tenthingcheating">10 Things to Do Immediately When You Find Out Your Partner Is Cheating</string>
-    <string name="home_sub_tenthingcheating">This is some information for you how to do when you found that he/she is cheating on you.</string>
-    <string name="home_eightstep">8 Steps That Can Save Your Marriage from Divorce</string>
-    <string name="home_sub_eightstep">The ways you to treat yourself for saving your marriage.</string>
+    <string name="home_predict" >Predict Divorce</string>
+    <string name="home_sub_predict" >Let\'s Predict</string>
+    <string name="home_lovesong" >Love Song</string>
+    <string name="home_sub_lovesong" >Great Love Songs for Your Romantic Playlist</string>
+    <string name="home_tenthingcheating" >10 Things to Do Immediately When You Find Out Your Partner Is Cheating</string>
+    <string name="home_sub_tenthingcheating" >This is some information for you how to do when you found that he/she is cheating on you.</string>
+    <string name="home_eightstep" >8 Steps That Can Save Your Marriage from Divorce</string>
+    <string name="home_sub_eightstep" >The ways you to treat yourself for saving your marriage.</string>
 
     <string name="movie_n1" translatable="false">Titanic (1997)</string>
     <string name="movie_1">\u0020\u0020\u0020\u0020Titanic has all the makings of a boilerplate love story: Jack (Leonardo DiCaprio) is from the wrong side of the tracks, Rose (Kate Winslet) comes from high society, and they meet by chance and fall in love. But set against the spectacle of the sinking of the historic ship — and with greatest-love-song-of-all-time contender "My Heart Will Go On" in the background — like Jack, this movie moves beyond its seemingly plain origins.</string>
@@ -151,4 +151,29 @@
     <string name="eightstep_des_item5">You may think this divorce is largely your partner\'s fault and have a list of things you\'d like him or her to change—but the only thing you can control is yourself. In the end, you\'ll both need to change in order to be happy, so it\'s time for you to get to work on your end of the deal. So go back to yoga class, see a therapist on your own, visit old friends, or learn a new hobby.</string>
     <string name="eightstep_des_item6">Once you do meet again, focus on positive, happy interactions instead of getting to work on the relationship right away. Over time, once some of the pressure is removed and you\'re able to laugh and smile together again, you can assess whether you\'re both still interested in working things out.</string>
     <string name="eightstep_des_item8">If you want a common theme of divorce, it\'s the inability to solve the problem [in a way] that both people feel satisfied with,says Sussman.</string>
+    <string name="flowername1" translatable="false">Yellow Acacia</string>
+    <string name="flowername2" translatable="false">Gillyflower</string>
+    <string name="flowername3" translatable="false">Blue Violet</string>
+    <string name="flowername4" translatable="false">Gardenia</string>
+    <string name="flowername5" translatable="false">White Lilac</string>
+    <string name="flowername6" translatable="false">Forget-Me-Not</string>
+    <string name="flowername7" translatable="false">White Dittany</string>
+    <string name="flowername8" translatable="false">Sweet Alyssum</string>
+    <string name="flowername9" translatable="false">White Clover</string>
+    <string name="flowername10" translatable="false">Azalea</string>
+    <string name="flowermeaning1">\u0020\u0020\u0020\u0020This pretty flower signifies the value of true friendship and can indicate a secret love. With such versatile meanings, the Yellow Acacia is a great gift to give anyone you care about. If you’re looking for romantic flowers, simply add a handful of yellow Acacia’s to a bouquet</string>
+    <string name="flowermeaning2">\u0020\u0020\u0020\u0020This flower symbolises a happy life and is one of lasting beauty. If you’re searching for a bloom that boasts a heavily scented fragrance, the Gillyflower is a great choice.</string>
+    <string name="flowermeaning3">\u0020\u0020\u0020\u0020These beautiful, hot-hued blooms are said to represent trustworthiness. The Blue Violet flower symbolises faith, affection, intuition and love. If you’re looking for romantic flowers, blue violets make a wonderful gift.</string>
+    <string name="flowermeaning4">\u0020\u0020\u0020\u0020These romantic flowers are generally gifted to those experiencing a secret love. Present them to someone close to you who you truly care about.</string>
+    <string name="flowermeaning5">\u0020\u0020\u0020\u0020This beautiful flower is an elegant option for a bouquet and boasts an appealing fragrance. The lilac’s colour represents the meaning of the flower – purity and youthful innocence.</string>
+    <string name="flowermeaning6">\u0020\u0020\u0020\u0020Forget-Me-Nots are an ideal option to gift to a loved one. These plants imply true love, and just as the name implies, they are given in the hope they (or the sender) will never be forgotten. Many believe this plant to signify an authentic love brimming with memories.</string>
+    <string name="flowermeaning7">\u0020\u0020\u0020\u0020This popular white-hued flower symbolises both feelings of love and passion. Whether you’re looking for romantic flowers for Valentine’s Day, a birthday, or quite simply to show a special someone you care for them, this is a favourite choice for many men. </string>
+    <string name="flowermeaning8">\u0020\u0020\u0020\u0020This enjoyable bloom boasts a fragrant scent and a serene, spiritual energy, which is said to provide an emotional balance in the home or office. Asides from symbolising beauty, the Sweet Alyssum is said to protect an individual from heated encounters. A great option for those who are a little down in the dumps and require an instant pick-me-up.
+</string>
+    <string name="flowermeaning9">\u0020\u0020\u0020\u0020The White Clover suggests feelings of vitality, and it is conventionally given to those who need a little good luck.</string>
+    <string name="flowermeaning10">\u0020\u0020\u0020\u0020These aesthetically pleasing flowers are a great addition to any bouquet, especially if you’re searching for romantic flowers. These beautiful blooms depict femininity and are often gifted to a partner or loved one.</string>
+    <string name="romanticMovie">Romantic Movie</string>
+    <string name="flower">Romantic Flowers and their Meanings</string>
+    <string name="romanticMovieSub">หนังรักสุดแสนโรแมนติก</string>
+    <string name="flowerSub">ดอกไม้แสนโรแมนติกและความหมาย</string>
 </resources>

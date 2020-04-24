@@ -13,6 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FlowersPage"></activity>
+        <activity android:name=".MoviePage" />
         <activity android:name=".EightStepPageActivity"></activity>
         <activity android:name=".TenThingPageActivity" />
         <activity android:name=".MoviePage" />
