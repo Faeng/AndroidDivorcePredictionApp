@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (position == 1){
                    //Love Song Page
-                    startActivity(new Intent(MainActivity.this, LoveSongPage.class));
+                    startActivity(new Intent(MainActivity.this, MoviePage.class));
                 }
             }
         });
