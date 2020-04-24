@@ -111,6 +111,25 @@
     <string name="movie_9">\u0020\u0020\u0020\u0020Read me this story, and I’ll find you. Damn. Nicholas Sparks is cheesy and oftentimes over the top, but The Notebook is a romantic story of love that just beautiful enough that it transcends all of the cheesiness it takes to tell it.</string>
     <string name="movie_n10" translatable="false">Call Me By Your Name (2017)</string>
     <string name="movie_10">\u0020\u0020\u0020\u0020That peach scene is something else. The Luca Guadagnino-directed film perfectly encapsulates the feelings of first love and love lost in a beautiful Italian setting. Bonus points: CMBYN is the rare gay love story where someone doesn’t get beaten or end up with HIV.</string>
-
-
+    <string name="flowername1" translatable="false">Yellow Acacia</string>
+    <string name="flowername2" translatable="false">Gillyflower</string>
+    <string name="flowername3" translatable="false">Blue Violet</string>
+    <string name="flowername4" translatable="false">Gardenia</string>
+    <string name="flowername5" translatable="false">White Lilac</string>
+    <string name="flowername6" translatable="false">Forget-Me-Not</string>
+    <string name="flowername7" translatable="false">White Dittany</string>
+    <string name="flowername8" translatable="false">Sweet Alyssum</string>
+    <string name="flowername9" translatable="false">White Clover</string>
+    <string name="flowername10" translatable="false">Azalea</string>
+    <string name="flowermeaning1">\u0020\u0020\u0020\u0020This pretty flower signifies the value of true friendship and can indicate a secret love. With such versatile meanings, the Yellow Acacia is a great gift to give anyone you care about. If you’re looking for romantic flowers, simply add a handful of yellow Acacia’s to a bouquet</string>
+    <string name="flowermeaning2">\u0020\u0020\u0020\u0020This flower symbolises a happy life and is one of lasting beauty. If you’re searching for a bloom that boasts a heavily scented fragrance, the Gillyflower is a great choice.</string>
+    <string name="flowermeaning3">\u0020\u0020\u0020\u0020These beautiful, hot-hued blooms are said to represent trustworthiness. The Blue Violet flower symbolises faith, affection, intuition and love. If you’re looking for romantic flowers, blue violets make a wonderful gift.</string>
+    <string name="flowermeaning4">\u0020\u0020\u0020\u0020These romantic flowers are generally gifted to those experiencing a secret love. Present them to someone close to you who you truly care about.</string>
+    <string name="flowermeaning5">\u0020\u0020\u0020\u0020This beautiful flower is an elegant option for a bouquet and boasts an appealing fragrance. The lilac’s colour represents the meaning of the flower – purity and youthful innocence.</string>
+    <string name="flowermeaning6">\u0020\u0020\u0020\u0020Forget-Me-Nots are an ideal option to gift to a loved one. These plants imply true love, and just as the name implies, they are given in the hope they (or the sender) will never be forgotten. Many believe this plant to signify an authentic love brimming with memories.</string>
+    <string name="flowermeaning7">\u0020\u0020\u0020\u0020This popular white-hued flower symbolises both feelings of love and passion. Whether you’re looking for romantic flowers for Valentine’s Day, a birthday, or quite simply to show a special someone you care for them, this is a favourite choice for many men. </string>
+    <string name="flowermeaning8">\u0020\u0020\u0020\u0020This enjoyable bloom boasts a fragrant scent and a serene, spiritual energy, which is said to provide an emotional balance in the home or office. Asides from symbolising beauty, the Sweet Alyssum is said to protect an individual from heated encounters. A great option for those who are a little down in the dumps and require an instant pick-me-up.
+</string>
+    <string name="flowermeaning9">\u0020\u0020\u0020\u0020The White Clover suggests feelings of vitality, and it is conventionally given to those who need a little good luck.</string>
+    <string name="flowermeaning10">\u0020\u0020\u0020\u0020These aesthetically pleasing flowers are a great addition to any bouquet, especially if you’re searching for romantic flowers. These beautiful blooms depict femininity and are often gifted to a partner or loved one.</string>
 </resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:padding="20dp"
+    android:background="#ffffff"
+    app:cardUseCompatPadding="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Title"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/fName"
+            android:gravity="center"
+            android:fontFamily="@font/mitr"/>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/predict"
+            android:id="@+id/fImage"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="75dp"
+            android:layout_height="wrap_content"
+            android:text="Sub Title"
+            android:textColor="#a9a9a9"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/fMean"
+            android:fontFamily="@font/mitr"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
