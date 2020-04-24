@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private MainActivityAdapter adapter;
     int[] mTitle ={R.string.home_predict, R.string.home_lovesong,R.string.romanticMovie,R.string.home_tenthingcheating,R.string.home_eightstep,R.string.flower};
     int[] sTitle ={R.string.home_sub_predict,R.string.home_sub_lovesong,R.string.romanticMovieSub, R.string.home_sub_tenthingcheating,R.string.home_sub_eightstep,R.string.flowerSub};
-    int[] image = {R.drawable.predict,  R.drawable.couple,R.drawable.couple,R.drawable.couple,R.drawable.couple,R.drawable.couple};
+    int[] image = {R.drawable.predict,  R.drawable.lovesong,R.drawable.romanticmovie,R.drawable.couple,R.drawable.couple,R.drawable.flower};
     private RecyclerView.LayoutManager mListView;
 
     @Override
