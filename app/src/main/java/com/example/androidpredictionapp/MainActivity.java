@@ -3,24 +3,16 @@ package com.example.androidpredictionapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.os.Bundle;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView listView;
     private MainActivityAdapter adapter;
-    int[] mTitle ={R.string.home_predict, R.string.home_lovesong,R.string.home_tenthingcheating,R.string.home_eightstep};
-    int[] sTitle ={R.string.home_sub_predict,R.string.home_sub_lovesong, R.string.home_sub_tenthingcheating,R.string.home_sub_eightstep};
-    int[] image = {R.drawable.predict,  R.drawable.couple,R.drawable.couple,R.drawable.couple};
+    int[] mTitle ={R.string.home_predict, R.string.home_lovesong,R.string.romanticMovie,R.string.home_tenthingcheating,R.string.home_eightstep,R.string.flower};
+    int[] sTitle ={R.string.home_sub_predict,R.string.home_sub_lovesong,R.string.romanticMovieSub, R.string.home_sub_tenthingcheating,R.string.home_sub_eightstep,R.string.flowerSub};
+    int[] image = {R.drawable.predict,  R.drawable.couple,R.drawable.couple,R.drawable.couple,R.drawable.couple,R.drawable.couple};
     private RecyclerView.LayoutManager mListView;
 
 
