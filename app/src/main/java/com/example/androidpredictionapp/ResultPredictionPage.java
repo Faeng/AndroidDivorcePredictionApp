@@ -22,6 +22,7 @@ public class ResultPredictionPage extends AppCompatActivity {
         System.out.println(results[0]);
         System.out.println(results[1]);
         setContentView(R.layout.result_prediction_layout);
+
         if(results[0]>results[1]){
             System.out.println("case one");
             TextView result_text = findViewById(R.id.resultTextView);

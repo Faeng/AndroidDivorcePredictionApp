@@ -10,13 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapter.MyViewHolder>{
-    public String title[] ;
-    public String description[] ;
-    public int image[];
+    public int[] title;
+    public int[] description;
+    public int[] image;
     private OnItemClickListener mListener;
 
 
-    public MainActivityAdapter(int[] image, String[] title, String[] description) {
+    public MainActivityAdapter(int[] image, int[] title, int[] description) {
         this.title = title;
         this.description = description;
         this.image = image;

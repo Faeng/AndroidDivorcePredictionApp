@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView listView;
     private MainActivityAdapter adapter;
-    String[] mTitle ={"Predict", "Love Song", "How to LOVE?"};
-    String[] sTitle ={"Let's Predict", "Great Love Songs for Your Romantic Playlist", "Let's have a trick"};
-    int[] image = {R.drawable.predict, R.drawable.couple, R.drawable.couple};
+    int[] mTitle ={R.string.home_predict, R.string.home_lovesong,R.string.home_tenthingcheating,R.string.home_eightstep};
+    int[] sTitle ={R.string.home_sub_predict,R.string.home_sub_lovesong, R.string.home_sub_tenthingcheating,R.string.home_sub_eightstep};
+    int[] image = {R.drawable.predict,  R.drawable.couple,R.drawable.couple,R.drawable.couple};
     private RecyclerView.LayoutManager mListView;
 
 

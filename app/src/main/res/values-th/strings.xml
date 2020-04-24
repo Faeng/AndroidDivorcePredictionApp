@@ -57,5 +57,12 @@
     <string name="predict_no_result">พวกคุณจะไม่หย่าร้าง\nโอกาสเป็น</string>
     <string name="home_button">กลับสู่เมนูหลัก</string>
     <string name="song_paragraph">\u0020\u0020\u0020\u0020หากคุณกำลังมองหาเพลงที่สมบูรณ์แบบที่จะเล่นในช่วงเย็นที่แสนโรแมนติกของคุณ เนื่องในวันพิเศษ วันครบรอบหรือต้องการเลือกเพลงที่เหมาะสำหรับวันวาเลนไทน์ นี่คือรายการเพลงรักที่ดีที่สุดที่จะช่วยคุณสร้างเพลย์ลิสต์ที่ดีสำหรับวันพิเศษของคุณ</string>
-
+    <string name="home_predict" >ทำนายการหย่าร้าง</string>
+    <string name="home_sub_predict" >เริ่มทำนายการหย่าร้างในคู่ของคุณ</string>
+    <string name="home_lovesong" >บทเพลงแห่งรัก</string>
+    <string name="home_sub_lovesong" >รายการเพลงรักโรแมนติกเพื่อคุณโดยเฉพาะ</string>
+    <string name="home_tenthingcheating" >10 สิ่งที่ควรทำโดยทันทีเมื่อคุณจับได้ว่าแฟนของคุณกำลังนอกใจ</string>
+    <string name="home_sub_tenthingcheating" >ข้อมูลเพื่อให้คุณรู้วิธีแนวทางปฏิบัติเมื่อทราบว่าตนรักของคุณกำลังนอกใจ</string>
+    <string name="home_eightstep" >8 ขั้นตอน ที่ช่วยทำให้ชีวิตคู่ไม่เกิดการหย่าร้าง</string>
+    <string name="home_sub_eightstep" >แนวทางในการปฏิบัติเพื่อทำให้ชีวิตคู่ไม่เจอกับคำว่า การหย่าร้าง</string>
 </resources>
