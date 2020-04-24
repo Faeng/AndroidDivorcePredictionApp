@@ -52,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
                    //Love Song Page
                     startActivity(new Intent(MainActivity.this, MoviePage.class));
                 }
+                if(position == 3){
+                    startActivity(new Intent(MainActivity.this,TenThingPageActivity.class));
+                }
+                if(position == 4){
+                    startActivity(new Intent(MainActivity.this,EightStepPageActivity.class));
+                }
             }
         });
     }

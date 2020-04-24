@@ -92,14 +92,14 @@
     <string name="des_song_16" translatable="false">Hit me like a ray of sun\nBurning through my darkest night\nYou\'re the only one that I want\nThink I\'m addicted to your light...</string>
     <string name="des_song_17" translatable="false">But baby now\nTake me into your loving arms\nKiss me under the light of a thousand stars.</string>
     <string name="des_song_18" translatable="false">Must be love on the brain\nThat\'s got me feeling this way\nIt beats me black and blue but it fucks me so good\nAnd I can\'t get enough...</string>
-    <string name="home_predict" >Predict Divorce</string>
-    <string name="home_sub_predict" >Let\'s Predict</string>
-    <string name="home_lovesong" >Love Song</string>
-    <string name="home_sub_lovesong" >Great Love Songs for Your Romantic Playlist</string>
-    <string name="home_tenthingcheating" >10 Things to Do Immediately When You Find Out Your Partner Is Cheating</string>
-    <string name="home_sub_tenthingcheating" >This is some information for you how to do when you found that he/she is cheating on you.</string>
-    <string name="home_eightstep" >8 Steps That Can Save Your Marriage from Divorce</string>
-    <string name="home_sub_eightstep" >The ways you to treat yourself for saving your marriage.</string>
+    <string name="home_predict">Predict Divorce</string>
+    <string name="home_sub_predict">Let\'s Predict</string>
+    <string name="home_lovesong">Love Song</string>
+    <string name="home_sub_lovesong">Great Love Songs for Your Romantic Playlist</string>
+    <string name="home_tenthingcheating">10 Things to Do Immediately When You Find Out Your Partner Is Cheating</string>
+    <string name="home_sub_tenthingcheating">This is some information for you how to do when you found that he/she is cheating on you.</string>
+    <string name="home_eightstep">8 Steps That Can Save Your Marriage from Divorce</string>
+    <string name="home_sub_eightstep">The ways you to treat yourself for saving your marriage.</string>
 
     <string name="movie_n1" translatable="false">Titanic (1997)</string>
     <string name="movie_1">\u0020\u0020\u0020\u0020Titanic has all the makings of a boilerplate love story: Jack (Leonardo DiCaprio) is from the wrong side of the tracks, Rose (Kate Winslet) comes from high society, and they meet by chance and fall in love. But set against the spectacle of the sinking of the historic ship — and with greatest-love-song-of-all-time contender "My Heart Will Go On" in the background — like Jack, this movie moves beyond its seemingly plain origins.</string>
@@ -122,5 +122,33 @@
     <string name="movie_n10" translatable="false">Call Me By Your Name (2017)</string>
     <string name="movie_10">\u0020\u0020\u0020\u0020That peach scene is something else. The Luca Guadagnino-directed film perfectly encapsulates the feelings of first love and love lost in a beautiful Italian setting. Bonus points: CMBYN is the rare gay love story where someone doesn’t get beaten or end up with HIV.</string>
 
+    <string name="tenthing_item1">1.Stay calm and gather information</string>
+    <string name="tenthing_item2">2.Remove yourself from the situation</string>
+    <string name="tenthing_item3">3.Find good company</string>
+    <string name="tenthing_item4">4.Let those tears fall freely</string>
+    <string name="tenthing_item5">5.Get some exercise</string>
+    <string name="tenthing_item6">6.Make an appointment with your doctor</string>
+    <string name="tenthing_item7">7.Don\'t use this time to blame yourself</string>
+    <string name="tenthing_item8">8.Don\'t let this shake how you feel about yourself</string>
+    <string name="tenthing_item9">9.Own your mistakes</string>
+    <string name="tenthing_item10">10.Ask if your needs are being met</string>
+    <string name="tenthing_des_item1">No matter how upset you are at first hearing the news, it\'s important that you collect as much information about what happened between your partner and this other person. </string>
+    <string name="tenthing_des_item2">It\'s not healthy for you to sit around in this situation, and could prevent you from processing everything in a healthy way.</string>
+    <string name="tenthing_des_item6">If your partner\'s been sexual with another individual, you can\'t be confident that he or she used protection, and you certainly don\'t know what kind of diseases or infections the person they were sexually active with may possess,\" Michael warned.</string>
+    <string name="tenthing_des_item10">Before you can say yes to continuing to pursue the relationship, you need to think things over. \"Give yourself space to not forgive, and if you get to a place when you feel like you can forgive, that\'s fine,\" Michael said. \"But, if not, that\'s really OK, too. There\'s no rule that says you have to come to a place of forgiveness.\" In other words, don\'t stay in the relationship if you find yourself in frequent pain.</string>
 
+    <string name="eightstep_item1">Step One: Accept Your Partner\'s Feelings</string>
+    <string name="eightstep_item2">Step Two: Validate Your Partner\'s Feelings</string>
+    <string name="eightstep_item3">Step Three: Shut Down Your Reactive Brain</string>
+    <string name="eightstep_item4">Step Four: Retreat</string>
+    <string name="eightstep_item5">Step Five: Get to Work on Yourself</string>
+    <string name="eightstep_item6">Step Six: Reestablish Contact</string>
+    <string name="eightstep_item7">Step Seven: Make New Ground Rules</string>
+    <string name="eightstep_item8">Step Eight: Observe What Happens</string>
+    <string name="eightstep_des_item1">You are both entitled to your own feelings, and it\'s crucial to accept his or her position without trying to change it.</string>
+    <string name="eightstep_des_item3">Your goal is to be the mature, kind, and loving person your partner fell in love with, not the anxious, angry person in survival mode.</string>
+    <string name="eightstep_des_item4">You must be calm. You must give your partner space. And you must act in a way that will allow him or her to miss you (translation: no yelling, no begging, no drama).</string>
+    <string name="eightstep_des_item5">You may think this divorce is largely your partner\'s fault and have a list of things you\'d like him or her to change—but the only thing you can control is yourself. In the end, you\'ll both need to change in order to be happy, so it\'s time for you to get to work on your end of the deal. So go back to yoga class, see a therapist on your own, visit old friends, or learn a new hobby.</string>
+    <string name="eightstep_des_item6">Once you do meet again, focus on positive, happy interactions instead of getting to work on the relationship right away. Over time, once some of the pressure is removed and you\'re able to laugh and smile together again, you can assess whether you\'re both still interested in working things out.</string>
+    <string name="eightstep_des_item8">If you want a common theme of divorce, it\'s the inability to solve the problem [in a way] that both people feel satisfied with,says Sussman.</string>
 </resources>
