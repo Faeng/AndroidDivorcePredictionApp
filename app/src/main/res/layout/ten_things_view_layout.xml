@@ -11,14 +11,15 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="176dp"
+        android:layout_height="258dp"
 
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
-        android:background="#FFFFFF"
+        android:background="#80FFFFFF"
+        android:fontFamily="@font/mitr"
         android:gravity="center"
         android:text="@string/home_tenthingcheating"
         android:textSize="24sp"
@@ -27,12 +28,24 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="#99F1DDF4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cheating" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,6 +65,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item1"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -63,6 +77,7 @@
                         android:layout_marginLeft="50dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_des_item1" />
                 </LinearLayout>
 
@@ -78,6 +93,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item2"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -89,6 +105,7 @@
                         android:layout_marginLeft="50dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_des_item2" />
 
                 </LinearLayout>
@@ -105,6 +122,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item3"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -122,6 +140,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item4"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -139,6 +158,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item5"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -156,6 +176,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item6"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -168,6 +189,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_des_item6" />
                 </LinearLayout>
 
@@ -183,6 +205,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item7"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -200,6 +223,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item8"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -217,6 +241,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item9"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -235,6 +260,7 @@
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_item10"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -247,6 +273,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/mitr"
                         android:text="@string/tenthing_des_item10" />
 
                 </LinearLayout>
