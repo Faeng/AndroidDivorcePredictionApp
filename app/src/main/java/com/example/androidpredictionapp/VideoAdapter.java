@@ -9,22 +9,21 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
 
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHolder> {
 
-//    private List<YouTubeVideos> youtubeVideoList;
     private int[] name;
     private int[] description;
     private String[] videoList;
 
     private String part2 = "\" frameborder=\"0\" allowfullscreen></iframe>\"";
     private String part1 = "\"<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/";
+
     public VideoAdapter() {
     }
 
     public VideoAdapter(String[] videoList, int[] name, int[] description) {
-//        this.youtubeVideoList = youtubeVideoList;
+
         this.name = name;
         this.description = description;
         this.videoList = videoList;

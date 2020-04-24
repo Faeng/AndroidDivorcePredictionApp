@@ -7,10 +7,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@drawable/bgpredict"
-    tools:context=".LoveSongPage">
+    tools:context=".MoviePage">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/videoRecyclerView"
+        android:id="@+id/videoRecyclerViewMovie"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp"/>
