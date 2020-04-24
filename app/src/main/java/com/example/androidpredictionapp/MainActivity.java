@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     int[] image = {R.drawable.predict,  R.drawable.couple,R.drawable.couple,R.drawable.couple,R.drawable.couple,R.drawable.couple};
     private RecyclerView.LayoutManager mListView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
