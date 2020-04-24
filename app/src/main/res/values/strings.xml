@@ -55,9 +55,8 @@
     <string name="predict_yes_result">You will be divorce.</string>
     <string name="predict_no_result">You will not be divorce.</string>
     <string name="home_button">Back to HOME MENU</string>
-    <string name="song_paragraph">\u0020\u0020\u0020\u0020Looking for that perfect song to play for your next romantic evening? Maybe you have a special date coming up, or an anniversary, or want to choose just the right music for Valentine\'s Day? Here is a list of some of the best love songs to help you create a great playlist for your special date.</string>
     <string name="song_1" translatable="false">"Yellow" - Coldplay</string>
-    <string name="song_2" translatable="false">"Lover" - Taylor Swift</string>
+    <string name="song_2" translatable="false">"My Heart Will Go On" - Celine Dion</string>
     <string name="song_3" translatable="false">"No One" - Alicia Keys</string>
     <string name="song_4" translatable="false">"Ocean" - Lady Antebellum</string>
     <string name="song_5" translatable="false">"Wife You Up" - Russ</string>
@@ -75,7 +74,7 @@
     <string name="song_17" translatable="false">"Thinking Out Loud" - Ed Sheeran</string>
     <string name="song_18" translatable="false">"Love on the Brain" - Rihanna</string>
     <string name="des_song_1" translatable="false">Look at the stars\nLook how they shine for you\nAnd everything you do\nYeah they were all yellow..."</string>
-    <string name="des_song_2" translatable="false">My heart\'s been borrowed and yours has been blue\nAll\'s well that ends well to end up with you...</string>
+    <string name="des_song_2" translatable="false">Love was when I loved you\nOne true time I hold to\nIn my life we\'ll always go on...</string>
     <string name="des_song_3" translatable="false">You and me together\nThrough the days and nights\nI don\'t worry \'cause\nEverything\'s gonna be alright...</string>
     <string name="des_song_4" translatable="false">Here you are, next to me\nSo much beauty at my feet\nAll I wanna do is swim\nBut the waves keep crashin\' in...</string>
     <string name="des_song_5" translatable="false">I\'m turning down the rest for you\nIf they call us foul I\'m fighting all the refs for you\nYou make me a better me\nI make you a better you....</string>
@@ -92,8 +91,26 @@
     <string name="des_song_16" translatable="false">Hit me like a ray of sun\nBurning through my darkest night\nYou\'re the only one that I want\nThink I\'m addicted to your light...</string>
     <string name="des_song_17" translatable="false">But baby now\nTake me into your loving arms\nKiss me under the light of a thousand stars.</string>
     <string name="des_song_18" translatable="false">Must be love on the brain\nThat\'s got me feeling this way\nIt beats me black and blue but it fucks me so good\nAnd I can\'t get enough...</string>
-
-
+    <string name="movie_n1" translatable="false">Titanic (1997)</string>
+    <string name="movie_1">\u0020\u0020\u0020\u0020Titanic has all the makings of a boilerplate love story: Jack (Leonardo DiCaprio) is from the wrong side of the tracks, Rose (Kate Winslet) comes from high society, and they meet by chance and fall in love. But set against the spectacle of the sinking of the historic ship — and with greatest-love-song-of-all-time contender "My Heart Will Go On" in the background — like Jack, this movie moves beyond its seemingly plain origins.</string>
+    <string name="movie_n2" translatable="false">Before Sunrise (1995)</string>
+    <string name="movie_2">\u0020\u0020\u0020\u0020Director Richard Linklater pulls of a remarkable feat with this casual film: the entire relationship unfolds as the two main characters walk around a European city, just chatting. It proves that great romances don\'t have to be so emotionally wrought. The film spawned two sequels, Before Sunset and Before Midnight, which follow the same couple.</string>
+    <string name="movie_n3" translatable="false">Portrait of a Lady on Fire (2019)</string>
+    <string name="movie_3">\u0020\u0020\u0020\u0020This film-festival favorite, which was nominated for a slew of awards at the end of 2019, follows a woman who is commissioned to travel to a remote island to paint a portrait of a woman as part of an arranged marriage; of course, she falls in love with her subject, and a forbidden romance ensues.</string>
+    <string name="movie_n4" translatable="false">A Star Is Born (2018)</string>
+    <string name="movie_4">\u0020\u0020\u0020\u0020If you\'re looking for a story about people brought together by talent and torn apart by fame, you can watch a number of takes on A Star Is Born: There\'s the 1937 original with Janet Gaynor and Fredric March, the 1954 version with Judy Garland and James Mason, and the 1976 remake with Barbra Streisand and Kris Kristofferson. But only the most recent one, with Lady Gaga and Bradley Cooper, has a performance of the heart-rending song "Shallow."</string>
+    <string name="movie_n5" translatable="false">If Beale Street Could Talk (2018)</string>
+    <string name="movie_5">\u0020\u0020\u0020\u0020"From Barry Jenkins — director of Moonlight, which is its own sort of romance — comes this James Baldwin adaptation. It's about a couple, madly in love and expecting a child, whose relationship is upended when one of them is accused of a crime he didn't commit.</string>
+    <string name="movie_n6" translatable="false">Shape of Water (2017)</string>
+    <string name="movie_6">\u0020\u0020\u0020\u0020If you know anything about Guillermo del Toro, then you know better than to ever try to predict what the fantastical director’s take on a love story would be. Besides, of course, that it will be more beautiful and unique than you could ever imagine. Shape of Water tells the tale of Elisa, a mute woman who works as a cleaning lady at a government laboratory, as she finds herself falling in love with the lab’s top-secret specimen: an amphibious creature. This film is a true testament that love comes in all shapes and sizes.</string>
+    <string name="movie_n7" translatable="false">The Big Sick (2017)</string>
+    <string name="movie_7">\u0020\u0020\u0020\u0020Kumail Nanjiani and Emily V. Gordon’s real-life hospital romance turned movie is one of the most original and thoughtful romances in years. In the face of tragedy, an estranged couple grows closer somehow by one of them being in a coma. Also, Holly Hunter is the best mom.</string>
+    <string name="movie_n8" translatable="false">Silver Linings Playbook (2012)</string>
+    <string name="movie_8">\u0020\u0020\u0020\u0020The first real entry of the Cooper/Lawrence film trio, Silver Linings Playbook is the story of what happens when perfectly flawed people find love together. The film also won Lawrence her first Oscar, and that’s pretty outstanding for a picture loosely categorized as a romantic comedy.</string>
+    <string name="movie_n9" translatable="false">The Notebook (2004)</string>
+    <string name="movie_9">\u0020\u0020\u0020\u0020Read me this story, and I’ll find you. Damn. Nicholas Sparks is cheesy and oftentimes over the top, but The Notebook is a romantic story of love that just beautiful enough that it transcends all of the cheesiness it takes to tell it.</string>
+    <string name="movie_n10" translatable="false">Call Me By Your Name (2017)</string>
+    <string name="movie_10">\u0020\u0020\u0020\u0020That peach scene is something else. The Luca Guadagnino-directed film perfectly encapsulates the feelings of first love and love lost in a beautiful Italian setting. Bonus points: CMBYN is the rare gay love story where someone doesn’t get beaten or end up with HIV.</string>
 
 
 </resources>
