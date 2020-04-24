@@ -50,11 +50,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (position == 1){
                    //Love Song Page
-                    startActivity(new Intent(MainActivity.this, MoviePage.class));
+                    startActivity(new Intent(MainActivity.this, LoveSongPage.class));
                 }
-
-                if (position == 5){
-                    startActivity(new Intent(MainActivity.this, FlowersPage.class));
+                if(position == 2){
+                    startActivity((new Intent(MainActivity.this, MoviePage.class)));
                 }
                 if(position == 3){
                     startActivity(new Intent(MainActivity.this,TenThingPageActivity.class));
@@ -62,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 if(position == 4){
                     startActivity(new Intent(MainActivity.this,EightStepPageActivity.class));
                 }
+                if (position == 5){
+                    startActivity(new Intent(MainActivity.this, FlowersPage.class));
+                }
+
             }
         });
     }
