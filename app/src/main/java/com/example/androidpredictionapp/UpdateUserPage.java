@@ -60,10 +60,10 @@ public class UpdateUserPage extends AppCompatActivity {
         profileImage = findViewById(R.id.profile_image);
 
         //set Data
-        String name[] = (user.getDisplayName()).split("##");
+        String[] name = (user.getDisplayName()).split("##");
         firstNameEt.setText(name[0]);
         lastNameEt.setText(name[1]);
-        profileImage.setImageURI(user.getPhotoUrl());
+        //profileImage.setImageURI(user.getPhotoUrl());
         imageUri = user.getPhotoUrl();
 
         profileImage.setOnClickListener(new View.OnClickListener() {

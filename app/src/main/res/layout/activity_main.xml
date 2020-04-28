@@ -37,11 +37,12 @@
             app:srcCompat="@drawable/iconprofile"
             app:civ_border_width="5dp"
             />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/name"
-            android:textSize="20sp"/>
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button"

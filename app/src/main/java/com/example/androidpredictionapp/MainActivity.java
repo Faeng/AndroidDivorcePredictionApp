@@ -48,12 +48,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.navigation);
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
-
         buildRecycleView();
         auth = FirebaseAuth.getInstance();
-
-
-
         //For Test
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String fName;
@@ -67,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fName = (user.getDisplayName()).replace("##"," ");
             photoUri = user.getPhotoUrl();
             name.setText(fName);
-            profile.setImageURI(photoUri);
+            //profile.setImageURI(photoUri);
         }
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +89,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(MainActivity.this, UpdatePasswordPage.class));
             }
         });
+
+
 
     }
 
@@ -135,9 +133,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.action_logout){
+            Toast.makeText(this,"Logout",Toast.LENGTH_LONG).show();
+            auth.signOut();
+            startActivity(new Intent(MainActivity.this, WelcomePage.class));
+            finish();
+        }
+        else if(item.getItemId() == R.id.edit_profile){
+            Toast.makeText(this,"Edit Profile",Toast.LENGTH_LONG).show();
+            startActivity(new Intent(MainActivity.this, UpdateUserPage.class));
+        }
+        else if(item.getItemId() == R.id.change_password){
+            Toast.makeText(this,"Change Password",Toast.LENGTH_LONG).show();
+            startActivity(new Intent(MainActivity.this, UpdatePasswordPage.class));
+        }
         Log.i("this is me","Logout");
         System.out.println("Logout ka");
-        Toast.makeText(this,"Logout",Toast.LENGTH_LONG).show();
+
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         //drawerLayout.closeDrawers();
         return true;
