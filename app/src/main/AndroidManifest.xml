@@ -28,6 +28,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FlowersPage" />
+        <activity android:name=".PredictionListPage"></activity>
+        <activity android:name=".PredictionHomePage" />
         <activity android:name=".MoviePage" />
         <activity android:name=".EightStepPageActivity" />
         <activity android:name=".TenThingPageActivity" />

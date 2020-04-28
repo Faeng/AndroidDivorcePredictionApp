@@ -119,5 +119,6 @@
     <string name="flower">ดอกไม้แสนโรแมนติกและความหมาย</string>
     <string name="romanticMovieSub">หนังรักสุดแสนโรแมนติกสำหรับช่วงเวลาที่แสนพิเศษของคุ</string>
     <string name="flowerSub">ถ้าคุณกำลังพิจารณาซื้อดอกไม้เพื่อสร้างความโรแมนติกคุณต้องรู้อะไรบ้างก่อนซื้อ</string>
-
+    <string name="predict">เริ่มทำนาย</string>
+    <string name="predictList">ดูรายการผลคำทำนายของฉัน</string>
 </resources>

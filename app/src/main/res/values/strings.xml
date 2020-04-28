@@ -176,4 +176,6 @@
     <string name="flower">Romantic Flowers and their Meanings</string>
     <string name="romanticMovieSub">Romantic Movie for your special time.</string>
     <string name="flowerSub">If you are considering buying some flowers as a romantic gesture, what do you need to know before you purchase?</string>
+    <string name="predict">Start Prediction</string>
+    <string name="predictList">See my Prediction list</string>
 </resources>
