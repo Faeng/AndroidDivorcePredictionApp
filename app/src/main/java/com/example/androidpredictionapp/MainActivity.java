@@ -1,12 +1,22 @@
 package com.example.androidpredictionapp;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MenuItem;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.navigation.NavigationView;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private RecyclerView listView;
     private MainActivityAdapter adapter;
@@ -20,7 +30,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.listView);
+        NavigationView navigationView = findViewById(R.id.navigation);
+        navigationView.bringToFront();
+        navigationView.setNavigationItemSelectedListener(this);
+
         buildRecycleView();
+
 
     }
 
@@ -37,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position) {
                 if(position == 0){
-                    startActivity(new Intent(MainActivity.this, PredictionPage.class));
+                    startActivity(new Intent(MainActivity.this, PredictionHomePage.class));
                 }
                 if (position == 1){
                    //Love Song Page
@@ -58,5 +73,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Log.i("this is me","Logout");
+        System.out.println("Logout ka");
+        Toast.makeText(this,"Logout",Toast.LENGTH_LONG).show();
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        //drawerLayout.closeDrawers();
+        return true;
     }
 }

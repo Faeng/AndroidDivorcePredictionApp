@@ -1,27 +1,35 @@
 package com.example.androidpredictionapp;
-
-import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import org.tensorflow.lite.Interpreter;
-
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
+import java.sql.Date;
+import java.text.DateFormat;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class PredictionPage extends AppCompatActivity {
 
     private TextView question,questionBox;
@@ -35,6 +43,11 @@ public class PredictionPage extends AppCompatActivity {
     float[][] out = new float[][]{{0,0}};
     Interpreter tflite;
     private static DecimalFormat df2 = new DecimalFormat("#.##");
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference predictionDB = database.getReference("predictions");
+
+    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+    LocalDate localDate = LocalDate.now();
 
     private RecyclerView choiceRecycle;
     private String no = "Question ";
@@ -53,6 +66,7 @@ public class PredictionPage extends AppCompatActivity {
     private int[] choice = {R.string.choiceLevel_0,R.string.choiceLevel_1,R.string.choiceLevel_2,
             R.string.choiceLevel_3,R.string.choiceLevel_4};
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +76,7 @@ public class PredictionPage extends AppCompatActivity {
         buildRecycleView();
         final Button btn = findViewById(R.id.buttonNext);
         btn.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 if(answer.size() < 44){
@@ -104,6 +119,23 @@ public class PredictionPage extends AppCompatActivity {
 //                                df2.format(out[0][0]*100)+"%"+"\n"+
 //                                "The prob that you will divorce is: "+df2.format(out[0][1]*100)+"%", Toast.LENGTH_LONG).show();
                         //showPredictResultPage(out[0][0],out[0][1]);
+
+                        //email send from login page
+                        String email = "piyawad.n@ku.th";
+
+                        //System.out.println(dtf.format(localDate)); //2016/11/16
+                        Prediction prediction = new Prediction();
+                        prediction.setEmail(email);
+                        prediction.setDateTime(localDate.toString());
+
+                        if(out[0][0]>=out[0][1]){
+                            prediction.setResult("You will not be divorce: " + df2.format(out[0][0]*100)+"%");
+                        }
+                        else{
+                            prediction.setResult("You will be divorce: "+df2.format(out[0][1]*100)+"%");
+                        }
+                        predictionDB.push().setValue(prediction);
+                        //----------------------------
                         Intent i = new Intent(PredictionPage.this, ResultPredictionPage.class);
                         i.putExtra("predictResult",new float[]{out[0][0],out[0][1]});
                         startActivity(i);
