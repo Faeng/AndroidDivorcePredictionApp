@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "757732841301",
+    "firebase_url": "https://login-prediction-of-divorce.firebaseio.com",
+    "project_id": "login-prediction-of-divorce",
+    "storage_bucket": "login-prediction-of-divorce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757732841301:android:a25117e80ab661bb9ec1dc",
+        "android_client_info": {
+          "package_name": "com.example.androidpredictionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757732841301-j3ugdchhnqlqaughmnmbf1j0klg6bpna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidpredictionapp",
+            "certificate_hash": "54e9f674a46d634d1c058467f384e85b4163414a"
+          }
+        },
+        {
+          "client_id": "757732841301-162gk2859r678012uu9bmkuhlvvp3rn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCktCHfC_VGZiPl4ZzZhOoqrJN61mW6Sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757732841301-162gk2859r678012uu9bmkuhlvvp3rn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
