@@ -178,4 +178,5 @@
     <string name="flowerSub">If you are considering buying some flowers as a romantic gesture, what do you need to know before you purchase?</string>
     <string name="predict">Start Prediction</string>
     <string name="predictList">See my Prediction list</string>
+    <string name="history">Your prediction history</string>
 </resources>

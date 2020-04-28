@@ -45,7 +45,6 @@ public class PredictionPage extends AppCompatActivity {
     private static DecimalFormat df2 = new DecimalFormat("#.##");
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference predictionDB = database.getReference("predictions");
-
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
     LocalDate localDate = LocalDate.now();
 
@@ -127,13 +126,9 @@ public class PredictionPage extends AppCompatActivity {
                         Prediction prediction = new Prediction();
                         prediction.setEmail(email);
                         prediction.setDateTime(localDate.toString());
-
-                        if(out[0][0]>=out[0][1]){
-                            prediction.setResult("You will not be divorce: " + df2.format(out[0][0]*100)+"%");
-                        }
-                        else{
-                            prediction.setResult("You will be divorce: "+df2.format(out[0][1]*100)+"%");
-                        }
+                        prediction.setClassNo(String.valueOf(out[0][0]));
+                        prediction.setClassYes(String.valueOf(out[0][01]));
+                        //prediction.setResult("You will not be divorce: " + df2.format(out[0][0]*100)+"%");
                         predictionDB.push().setValue(prediction);
                         //----------------------------
                         Intent i = new Intent(PredictionPage.this, ResultPredictionPage.class);

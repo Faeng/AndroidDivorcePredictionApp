@@ -28,39 +28,6 @@
         android:orientation="vertical"
         android:background="#ffffff"
         android:layout_margin="10dp">
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_gravity="center"
-            app:civ_border_color="#000000"
-            app:srcCompat="@drawable/iconprofile"
-            app:civ_border_width="5dp"
-            />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Logout Test" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Edit Profile" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="change password" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listView"
