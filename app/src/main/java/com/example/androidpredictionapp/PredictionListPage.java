@@ -38,6 +38,7 @@ public class PredictionListPage extends AppCompatActivity {
     DatabaseReference predictionDB = database.getReference("predictions");
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,7 @@ public class PredictionListPage extends AppCompatActivity {
                 predictionList.clear();
                 for (DataSnapshot userSnapshot: dataSnapshot.getChildren()) {
                     Prediction prediction = userSnapshot.getValue(Prediction.class);
-                    if(prediction.getEmail().equals(email)){
+                    if(prediction.getEmail().equals(user.getEmail())){
                         predictionList.add(prediction);
                     }
                     adapter.notifyDataSetChanged();
