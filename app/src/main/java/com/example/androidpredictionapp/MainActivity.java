@@ -8,8 +8,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RecyclerView.LayoutManager mListView;
 
     //For Test
-    private Button logout, edit, change;
+    //private Button logout, edit, change;
     private FirebaseAuth auth;
     private TextView name;
     private CircleImageView profile;
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.listView);
         NavigationView navigationView = findViewById(R.id.navigation);
+        View headerView = navigationView.getHeaderView(0);
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
         buildRecycleView();
@@ -54,42 +57,38 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String fName;
         Uri photoUri ;
-        change = findViewById(R.id.button3);
-        logout = findViewById(R.id.button);
-        edit = findViewById(R.id.button2);
-        profile = findViewById(R.id.profile_image);
-        name = findViewById(R.id.name);
+        profile = headerView.findViewById(R.id.profile_image_nav);
+        name = headerView.findViewById(R.id.profile_name_nav);
         if(user != null){
             fName = (user.getDisplayName()).replace("##"," ");
             photoUri = user.getPhotoUrl();
             name.setText(fName);
-            profile.setImageURI(photoUri);
+            //profile.setImageURI(user.getPhotoUrl());
         }
-        edit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, UpdateUserPage.class));
-            }
-        });
-
-
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth.signOut();
-                startActivity(new Intent(MainActivity.this, WelcomePage.class));
-                finish();
-            }
-        });
-
-        change.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, UpdatePasswordPage.class));
-            }
-        });
-
+//        edit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this, UpdateUserPage.class));
+//            }
+//        });
+//
+//
+//
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                auth.signOut();
+//                startActivity(new Intent(MainActivity.this, WelcomePage.class));
+//                finish();
+//            }
+//        });
+//
+//        change.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this, UpdatePasswordPage.class));
+//            }
+//        });
 
 
     }

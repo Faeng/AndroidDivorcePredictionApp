@@ -1,38 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PredictionHomePage"
-    android:background="@drawable/bgpredict">
+    android:background="@drawable/bgpredict"
+    android:orientation="vertical"
+    tools:context=".PredictionHomePage">
 
 
-    <Button
-        android:id="@+id/predictButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:fontFamily="@font/mitr"
-        android:onClick="predictionClk"
-        android:text="@string/predict"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/nav_header_height"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/predictListButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="271dp"
-        android:fontFamily="@font/mitr"
-        android:onClick="predictionListClk"
-        android:text="@string/predictList"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/predictButton"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/predictButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBC1F3"
+            android:fontFamily="@font/mitr"
+            android:onClick="predictionClk"
+            android:text="@string/predict" />
+
+        <Button
+            android:id="@+id/predictListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBC1F3"
+            android:fontFamily="@font/mitr"
+            android:onClick="predictionListClk"
+            android:text="@string/predictList" />
+
+    </LinearLayout>
+
+</LinearLayout>
