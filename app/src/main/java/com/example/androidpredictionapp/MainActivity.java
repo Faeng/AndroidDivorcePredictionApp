@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fName = (user.getDisplayName()).replace("##"," ");
             photoUri = user.getPhotoUrl();
             name.setText(fName);
-            //profile.setImageURI(photoUri);
+            profile.setImageURI(photoUri);
         }
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
