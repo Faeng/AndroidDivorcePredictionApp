@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         name = headerView.findViewById(R.id.profile_name_nav);
         if(user != null){
             fName = (user.getDisplayName()).replace("##"," ");
-            photoUri = user.getPhotoUrl();
+//            photoUri = user.getPhotoUrl();
             name.setText(fName);
-            //profile.setImageURI(user.getPhotoUrl());
+            profile.setImageURI(user.getPhotoUrl());
         }
 
 

@@ -1,106 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:orientation="vertical"
     android:background="@drawable/bgpredict"
     tools:context=".UpdateUserPage">
-
     <LinearLayout
-        android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:orientation="vertical">
-        <TextView
+
+        <LinearLayout
+            android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update Profile"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:fontFamily="@font/mitr"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_marginBottom="40dp"
-            />
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Please sign up to enter in app."-->
-<!--            android:gravity="center"-->
-<!--            android:fontFamily="@font/mitr"-->
-<!--            android:layout_marginBottom="40dp"/>-->
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_gravity="center"
-            app:civ_border_color="#000000"
-            app:srcCompat="@drawable/iconprofile"
-            app:civ_border_width="5dp"
-            />
-
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="15dp">
-
-            <EditText
-                android:id="@+id/firstName_edt_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:orientation="vertical">
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="FIRST NAME"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
                 android:gravity="center"
-                android:inputType="text"
+                android:textSize="30sp"
+                android:fontFamily="@font/mitr"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
                 />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="56dp">
-
-            <EditText
-                android:id="@+id/lastName_edt_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="LAST NAME"
-                android:gravity="center"
-                android:inputType="text"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                app:civ_border_color="#000000"
+                app:srcCompat="@drawable/iconprofile"
+                app:civ_border_width="5dp"
                 />
 
-        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/update_btn"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/firstName_edt_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="FIRST NAME"
+                    android:gravity="center"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <EditText
+                    android:id="@+id/lastName_edt_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="LAST NAME"
+                    android:gravity="center"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:background="#B1BDFF"
+                android:textColor="#000000"
+                android:fontFamily="@font/mitr"
+                android:text="UPDATE"/>
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="32dp"
-            android:background="#B1BDFF"
-            android:textColor="#000000"
-            android:fontFamily="@font/mitr"
-            android:text="UPDATE"/>
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
     </LinearLayout>
-
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone" />
-</LinearLayout>
+</ScrollView>
