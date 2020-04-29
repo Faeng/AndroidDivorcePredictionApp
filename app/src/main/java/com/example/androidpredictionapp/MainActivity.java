@@ -63,34 +63,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fName = (user.getDisplayName()).replace("##"," ");
             photoUri = user.getPhotoUrl();
             name.setText(fName);
-            //profile.setImageURI(user.getPhotoUrl());
+            profile.setImageURI(user.getPhotoUrl());
         }
-//        edit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this, UpdateUserPage.class));
-//            }
-//        });
-//
-//
-//
-//        logout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                auth.signOut();
-//                startActivity(new Intent(MainActivity.this, WelcomePage.class));
-//                finish();
-//            }
-//        });
-//
-//        change.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this, UpdatePasswordPage.class));
-//            }
-//        });
-
-
     }
 
     public void buildRecycleView(){

@@ -28,6 +28,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class PredictionPage extends AppCompatActivity {
@@ -64,6 +66,7 @@ public class PredictionPage extends AppCompatActivity {
             R.string.item_42,R.string.item_43,R.string.item_44,R.string.item_45,R.string.item_46};
     private int[] choice = {R.string.choiceLevel_0,R.string.choiceLevel_1,R.string.choiceLevel_2,
             R.string.choiceLevel_3,R.string.choiceLevel_4};
+    private FirebaseAuth auth;
 
 
     @Override
@@ -120,7 +123,10 @@ public class PredictionPage extends AppCompatActivity {
                         //showPredictResultPage(out[0][0],out[0][1]);
 
                         //email send from login page
-                        String email = "piyawad.n@ku.th";
+                        auth = FirebaseAuth.getInstance();
+                        //For Test
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        String email = user.getEmail();
 
                         //System.out.println(dtf.format(localDate)); //2016/11/16
                         Prediction prediction = new Prediction();
