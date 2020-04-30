@@ -9,23 +9,35 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -41,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private FirebaseAuth auth;
     private TextView name;
     private CircleImageView profile;
+    private ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +72,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri photoUri ;
         profile = headerView.findViewById(R.id.profile_image_nav);
         name = headerView.findViewById(R.id.profile_name_nav);
-        if(user != null){
+        if(!TextUtils.isEmpty(user.getDisplayName())){
             fName = (user.getDisplayName()).replace("##"," ");
-//            photoUri = user.getPhotoUrl();
+            photoUri = Uri.parse((user.getPhotoUrl()).toString());
             name.setText(fName);
-            profile.setImageURI(user.getPhotoUrl());
+            FirebaseStorage storage = FirebaseStorage.getInstance();
+            StorageReference stRef = storage.getReference().child("images/"+ user.getUid());
+            stRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
+            {
+                @Override
+                public void onSuccess(Uri downloadUrl)
+                {
+                    String uri = downloadUrl.toString();
+                    if(!TextUtils.isEmpty(uri)) {
+                        Glide.with(MainActivity.this)
+                                .load(uri)
+                                .into(profile);
+                    }
+                }
+            });
         }
 
 
@@ -85,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     startActivity(new Intent(MainActivity.this, PredictionHomePage.class));
                 }
                 if (position == 1){
-                   //Love Song Page
+                    //Love Song Page
                     startActivity(new Intent(MainActivity.this, LoveSongPage.class));
                 }
                 if(position == 2){
@@ -116,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if(item.getItemId() == R.id.edit_profile){
             Toast.makeText(this,"Edit Profile",Toast.LENGTH_LONG).show();
-            startActivity(new Intent(MainActivity.this, UpdateUserPage.class));
+            startActivity(new Intent(MainActivity.this,UpdateUserPage.class));
         }
         else if(item.getItemId() == R.id.change_password){
             Toast.makeText(this,"Change Password",Toast.LENGTH_LONG).show();
@@ -133,5 +160,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         intent.addCategory(Intent.CATEGORY_HOME);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+    }
+
+    public static Bitmap getBitmapFromURL(String src) {
+        try {
+            URL url = new URL(src);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap myBitmap = BitmapFactory.decodeStream(input);
+            return myBitmap;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

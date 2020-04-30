@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgpredict"
-    tools:context=".UpdatePasswordPage">
+    tools:context=".ProfilePage">
     <LinearLayout
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/layout"
@@ -25,11 +26,10 @@
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CHANGE PASSWORD"
+                android:text="Update Profile"
                 android:gravity="center"
                 android:textSize="30sp"
                 android:fontFamily="@font/mitr"
@@ -38,88 +38,66 @@
                 android:layout_marginBottom="40dp"
                 />
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                app:civ_border_color="#000000"
+                app:srcCompat="@drawable/iconprofile"
+                app:civ_border_width="5dp"
+                />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/firstName_edt_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="FIRST NAME"
+                    android:gravity="center"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="56dp">
 
                 <EditText
-                    android:id="@+id/password_edt_text"
+                    android:id="@+id/lastName_edt_text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="NEW PASSWORD"
-                    android:layout_gravity="center"
+                    android:hint="LAST NAME"
                     android:gravity="center"
-                    android:inputType="textPassword"/>
+                    android:inputType="text"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
             <Button
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:background="#B1BDFF"
-                android:textColor="#000000"
-                android:fontFamily="@font/mitr"
-                android:id="@+id/change_pass_btn"
+                android:id="@+id/update_btn"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="32dp"
-                android:text="CHANGE PASSWORD"/>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="16dp">
-
-                <TextView
-                    android:id="@+id/tvText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="OR"
-                    android:textColor="#000000"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
-                    android:layout_toLeftOf="@id/tvText"
-                    android:background="#000000" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="16dp"
-                    android:layout_toRightOf="@id/tvText"
-                    android:background="#000000" />
-
-            </RelativeLayout>
-
-            <Button
-                style="@style/Widget.AppCompat.Button.Colored"
                 android:background="#B1BDFF"
                 android:textColor="#000000"
                 android:fontFamily="@font/mitr"
-                android:id="@+id/back_btn"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="16dp"
-                android:text="back" />
-
+                android:text="UPDATE"/>
         </LinearLayout>
+
 
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone" />
-
     </LinearLayout>
 </ScrollView>

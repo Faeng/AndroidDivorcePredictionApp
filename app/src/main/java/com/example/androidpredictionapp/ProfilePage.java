@@ -20,7 +20,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -34,10 +33,9 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class UpdateUserPage extends AppCompatActivity {
+public class ProfilePage extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private EditText firstNameEt, lastNameEt;
@@ -51,11 +49,10 @@ public class UpdateUserPage extends AppCompatActivity {
     private FirebaseStorage storage;
     private StorageReference storageReference;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update_user_page);
+        setContentView(R.layout.activity_profile_page);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
         auth = FirebaseAuth.getInstance();
@@ -67,33 +64,12 @@ public class UpdateUserPage extends AppCompatActivity {
         update = findViewById(R.id.update_btn);
         progressBar = findViewById(R.id.progressBar);
         profileImage = findViewById(R.id.profile_image);
-        String[] name = (user.getDisplayName()).split("##");
-        //set Data
-        if(name.length == 2) {
-
-            firstNameEt.setText(name[0]);
-            lastNameEt.setText(name[1]);
-            StorageReference stRef = storage.getReference().child("images/"+ user.getUid());
-            stRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>()
-            {
-                @Override
-                public void onSuccess(Uri downloadUrl)
-                {
-                    String uri = downloadUrl.toString();
-                    Glide.with(UpdateUserPage.this)
-                            .load(uri)
-                            .into(profileImage);
-                }
-            });
-        }else{
-            profileImage.setImageResource(R.drawable.iconprofile);
-        }
-
+        profileImage.setImageResource(R.drawable.iconprofile);
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ActivityCompat.checkSelfPermission(UpdateUserPage.this, Manifest.permission.READ_EXTERNAL_STORAGE )!= PackageManager.PERMISSION_GRANTED){
-                    ActivityCompat.requestPermissions(UpdateUserPage.this,new String[] {Manifest.permission.READ_EXTERNAL_STORAGE},200);
+                if (ActivityCompat.checkSelfPermission(ProfilePage.this, Manifest.permission.READ_EXTERNAL_STORAGE )!= PackageManager.PERMISSION_GRANTED){
+                    ActivityCompat.requestPermissions(ProfilePage.this,new String[] {Manifest.permission.READ_EXTERNAL_STORAGE},200);
                     return;
                 }
                 Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -108,9 +84,9 @@ public class UpdateUserPage extends AppCompatActivity {
                 String lastName = lastNameEt.getText().toString();
                 if(TextUtils.isEmpty(firstName) || TextUtils.isEmpty(lastName) || TextUtils.isEmpty(imageUri.toString())){
                     if(TextUtils.isEmpty(imageUri+"")){
-                        Toast.makeText(UpdateUserPage.this, "Please select image profile", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ProfilePage.this, "Please select image profile", Toast.LENGTH_LONG).show();
                     }else {
-                        Toast.makeText(UpdateUserPage.this, "Please fill all the fields", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ProfilePage.this, "Please fill all the fields", Toast.LENGTH_LONG).show();
                     }
                 }
                 else {
@@ -124,12 +100,13 @@ public class UpdateUserPage extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(UpdateUserPage.this,"Update Complete",Toast.LENGTH_LONG).show();
+                                        Toast.makeText(ProfilePage.this,"Update Complete",Toast.LENGTH_LONG).show();
+
                                     }
                                 }
                             });
                     uploadImage();
-                    startActivity(new Intent(UpdateUserPage.this, MainActivity.class));
+                    startActivity(new Intent(ProfilePage.this, MainActivity.class));
                     finish();
                 }
             }
@@ -151,7 +128,7 @@ public class UpdateUserPage extends AppCompatActivity {
     private void uploadImage() {
 
         if (imageUri != null) {
-            final ProgressDialog progressDialog = new ProgressDialog(UpdateUserPage.this);
+            final ProgressDialog progressDialog = new ProgressDialog(ProfilePage.this);
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
 
@@ -161,14 +138,14 @@ public class UpdateUserPage extends AppCompatActivity {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             progressDialog.dismiss();
-                            Toast.makeText(UpdateUserPage.this, "Uploaded", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ProfilePage.this, "Uploaded", Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             progressDialog.dismiss();
-                            Toast.makeText(UpdateUserPage.this, "Failed " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ProfilePage.this, "Failed " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     })
                     .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
@@ -181,5 +158,4 @@ public class UpdateUserPage extends AppCompatActivity {
                     });
         }
     }
-
 }

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgpredict"
     android:layout_gravity="center"
+    android:foregroundGravity="center"
     tools:context=".SignUpPage">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,50 +43,6 @@
                 android:gravity="center"
                 android:fontFamily="@font/mitr"
                 android:layout_marginBottom="40dp"/>
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_gravity="center"
-                app:civ_border_color="#000000"
-                app:srcCompat="@drawable/iconprofile"
-                app:civ_border_width="5dp"
-                />
-
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="15dp">
-
-                <EditText
-                    android:id="@+id/firstName_edt_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="FIRST NAME"
-                    android:gravity="center"
-                    android:inputType="text"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="56dp">
-
-                <EditText
-                    android:id="@+id/lastName_edt_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="LAST NAME"
-                    android:gravity="center"
-                    android:inputType="text"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="5dp"
