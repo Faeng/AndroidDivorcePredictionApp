@@ -106,7 +106,8 @@ public class ProfilePage extends AppCompatActivity {
                                 }
                             });
                     uploadImage();
-                    startActivity(new Intent(ProfilePage.this, MainActivity.class));
+                    auth.signOut();
+                    startActivity(new Intent(ProfilePage.this, LoginPage.class));
                     finish();
                 }
             }
